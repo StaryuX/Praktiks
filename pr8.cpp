@@ -10,23 +10,23 @@ int main() {
     stack<int> s; // Объявление структуры стек
 
     cout << "Enter n : " ;
-    cin >> n; // Ручной ввод N
+    cin >> n; // Вводим n с клавиатуры
     
     for (int i = 0; i < n; i++) {
         
         cout << "Enter x : ";
-        cin >> x; // Ручной ввод X
+        cin >> x; // Вводим x с клавиатуры
         
         if (i == 0) {
-            s.push(x); // Элемент в начало списка
+            s.push(x); 
         }
         if (i > 0) {
-            if (x > s.top()) {//  stack.
-                s.push(x); // Элемент в начало списка
+            if (x > s.top()) {
+                s.push(x); 
             }
         }
     }
-    cout << s.size() << endl; // 
+    cout << s.size() << endl;
     return 0;
 }
 //work by StaryuX
